@@ -35,7 +35,7 @@ async function scrapeProduct() {
     browser.close();
 };
 
-scrapeProduct();
+// scrapeProduct();
 
 app.set("views", `${__dirname}/views`);
 app.set("view engine", "ejs");

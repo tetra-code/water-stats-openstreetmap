@@ -1,8 +1,10 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;  
     scroll-behavior: smooth;
     margin: 0 auto;
-    overflow-x: hidden;
+    /* Can't use overflow-x on all since it will hide
+    the rendered layers
+    overflow-x: hidden; */
 }
 
 :root {
@@ -39,6 +41,11 @@ svg {
   vertical-align: middle;
   overflow: hidden;
   z-index: 2;
+}
+
+#map { 
+  height: 700px; 
+  width: 700px;
 }
 
 /* Container */
