@@ -1,0 +1,23 @@
+{
+  "name": "waterstat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tetra-code/waterstat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/Tetra-code/waterstat#readme",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.3",
+    "node": "^17.7.2",
+    "puppeteer": "^13.5.2",
+    "ws": "^8.5.0"
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <title>Netherlands Water Stats</title>
+</head>
+<body>
+    <div class="header">
+        <svg viewBox="0 20 500 500" preserveAspectRatio="xMinYMin meet">
+            <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:lightskyblue;"></path>
+            <text x="77" y="50" fill="white">Netherlands</text>
+            <text x="77" y="85" fill="white">Water</text>
+            <text x="77" y="120" fill="white">Stats</text>
+        </svg>  
+    </div>
+    <div class="container">
+        <img src="images/netherlands.png">
+        <div class="dot Alkmaar" onclick="openNav('alkmaar')">
+            <div class="city">Alkmaar</div>
+        </div>
+        <div class="dot Almere" onclick="openNav('almere')">
+            <div class="city">Almere</div>
+        </div>
+        <div class="dot Amersfoort" onclick="openNav('amersfoort')">
+            <div class="city">Amersfoort</div>
+        </div>
+        <div class="dot Amstelveen" onclick="openNav('amstelveen')">
+            <div class="city">Amstelveen</div>
+        </div>
+        <div class="dot Amsterdam" onclick="openNav('amsterdam-nl')">
+            <div class="city">Amsterdam</div>
+        </div>
+        <div class="dot Apeldoorn" onclick="openNav('apeldoorn')">
+            <div class="city">Apeldoorn</div>
+        </div>
+        <div class="dot Arnhem" onclick="openNav('arnhem')">
+            <div class="city">Arnhem</div>
+        </div>
+        <div class="dot Assen" onclick="openNav('assen')">
+        <div class="city">Assen</div>
+        </div>
+        <div class="dot Breda" onclick="openNav('breda')">
+        <div class="city">Breda</div>
+        </div>
+        <div class="dot Delft" onclick="openNav('delft')">
+        <div class="city">Delft</div>
+        </div>
+        <div class="dot s-hertogenbosch" onclick="openNav('s-hertogenbosch')">
+        <div class="city">s-hertogenbosch</div>
+        </div>
+        <div class="dot Den_Haag" onclick="openNav('the-hague-den-haag')">
+        <div class="city">Den Haag</div>
+        </div>
+        <div class="dot Den_Helder" onclick="openNav('den-helder')">
+        <div class="city">Den Helder</div>
+        </div>
+        <div class="dot Deventer" onclick="openNav('deventer')">
+        <div class="city">Deventer</div>
+        </div>
+        <div class="dot Doorn" onclick="openNav('doorn')">
+        <div class="city">Doorn</div>
+        </div>
+        <div class="dot Dordrecht" onclick="openNav('dordrecht')">
+        <div class="city">Dordrecht</div>
+        </div>
+        <div class="dot Edam" onclick="openNav('edam')">
+        <div class="city">Edam</div>
+        </div>
+        <div class="dot Ede" onclick="openNav('ede')">
+        <div class="city">Ede</div>
+        </div>
+        <div class="dot Eindhoven" onclick="openNav('eindhoven')">
+        <div class="city">Eindhoven</div>
+        </div>
+        <div class="dot Enkhuizen" onclick="openNav('enkhuizen')">
+        <div class="city">Enkhuizen</div>
+        </div>
+        <div class="dot Enschede" onclick="openNav('enschede')">
+        <div class="city">Enschede</div>
+        </div>
+        <div class="dot Giethoorn" onclick="openNav('giethoorn')">
+        <div class="city">Giethoorn</div>
+        </div>
+        <div class="dot Gouda" onclick="openNav('gouda')">
+        <div class="city">Gouda</div>
+        </div>
+        <div class="dot Haarlem" onclick="openNav('haarlem')">
+        <div class="city">Haarlem</div>
+        </div>
+        <div class="dot Heerlen" onclick="openNav('heerlen')">
+        <div class="city">Heerlen</div>
+        </div>
+        <div class="dot Hilversum" onclick="openNav('hilversum')">
+        <div class="city">Hilversum</div>
+        </div>
+        <div class="dot Hoorn" onclick="openNav('hoorn')">
+        <div class="city">Hoorn</div>
+        </div>
+        <div class="dot Kampen" onclick="openNav('kampen')">
+        <div class="city">Kampen</div>
+        </div>
+        <div class="dot Kinderdijk" onclick="openNav('kinderdijk')">
+        <div class="city">Kinderdijk</div>
+        </div>
+        <div class="dot Leeuwarden" onclick="openNav('leeuwarden')">
+        <div class="city">Leeuwarden</div>
+        </div>
+        <div class="dot Leiden" onclick="openNav('leiden')">
+        <div class="city">Leiden</div>
+        </div>
+        <div class="dot Lelystad" onclick="openNav('lelystad')">
+        <div class="city">Lelystad</div>
+        </div>
+        <div class="dot Maastricht" onclick="openNav('maastricht')">
+        <div class="city">Maastricht</div>
+        </div>
+        <div class="dot Medemblik" onclick="openNav('medemblik')">
+        <div class="city">Medemblik</div>
+        </div>
+        <div class="dot Nijmegen" onclick="openNav('nijmegen')">
+        <div class="city">Nijmegen</div>
+        </div>
+        <div class="dot Roermond" onclick="openNav('roermond')">
+        <div class="city">Roermond</div>
+        </div>
+        <div class="dot Rotterdam" onclick="openNav('rotterdam')">
+        <div class="city">Rotterdam</div>
+        </div>
+        <div class="dot Sneek" onclick="openNav('sneek')">
+        <div class="city">Sneek</div>
+        </div>
+        <div class="dot Tilburg" onclick="openNav('tilburg')">
+        <div class="city">Tilburg</div>
+        </div>
+        <div class="dot Utrecht" onclick="openNav('utrecht')">
+        <div class="city">Utrecht</div>
+        </div>
+        <div class="dot Veere" onclick="openNav('veere')">
+        <div class="city">Veere</div>
+        </div>
+        <div class="dot Venlo" onclick="openNav('venlo')">
+        <div class="city">Venlo</div>
+        </div>
+        <div class="dot Wageningen" onclick="openNav('wageningen')">
+        <div class="city">Wageningen</div>
+        </div>
+        <div class="dot Zaanse_Schans" onclick="openNav('zaanse-schans')">
+        <div class="city">Zaanse Schans</div>
+        </div>
+        <div class="dot Zwolle" onclick="openNav('zwolle')">
+        <div class="city">Zwolle</div>
+        </div>
+    </div>
+    <div id="mySidebar" class="navigation">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">x</a>
+        <div class="text">Drinking Water Pollution</div>
+        <div class="bar" id="sidebar-drinking-water-pollution"></div>
+        <div class="text">Water Pollution</div>
+        <div class="bar" id="sidebar-water-pollution"></div>
+        <div class="text">Drinking Water Quality</div>
+        <div class="bar" id="sidebar-drinking-water-quality"></div>
+        <div class="text">Water Quality</div>
+        <div class="bar" id="sidebar-water-quality"></div>
+    </div>
+    <div id="myNav" class="navigation">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <div class="text">
+            <div>Drinking Water Pollution</div>
+            <div>Water Pollution</div>
+            <div>Drinking Water Quality</div>
+            <div>Water Quality</div>
+        </div>
+        <div class="bar">
+            <div id="nav-drinking-water-pollution"></div>
+            <div id="nav-water-pollution"></div>
+            <div id="nav-drinking-water-quality"></div>
+            <div id="nav-water-quality"></div>
+        </div>
+    </div>
+    <script src='javascript/index.js'></script>
+</body>
+</html>
