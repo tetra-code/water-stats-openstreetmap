@@ -115,6 +115,12 @@
             navOpen = false;
         }
 
+        function registerMarker(latitude, longitude, city) {
+            const marker = L.marker([latitude, longitude]).bindPopup(city)
+            marker.addTo(map)
+            marker.addEventListener("click", () => {openNav(city)})
+        }
+
         window.addEventListener('resize', () => {
             if (window.matchMedia('(max-width: 1000px)').matches && sidebarOpen) {
                 closeSidebar();
@@ -136,16 +142,20 @@
         map.addLayer(osm);
 
         // Icon for city indications
-        const alkmaar = L.marker([52.6324, 4.7534]).bindPopup('Alkmaar')
-        alkmaar.addTo(map)
-        alkmaar.addEventListener("click", () => {openNav('alkmaar')})
-        const almere = L.marker([52.3508, 5.2647]).bindPopup('Almere')
-        almere.addTo(map)
-        almere.addEventListener("click", () => {openNav('almere')})
-        const amersfoort = L.marker([52.1561, 5.3878]).bindPopup('Amersfoort')
-        amersfoort.addTo(map)
-        amersfoort.addEventListener("click", () => {openNav('amersfoort')})
-
+        registerMarker(52.6324, 4.7534, 'alkmaar')
+        registerMarker(52.3508, 5.2647, 'almere')
+        registerMarker(52.1561, 5.3878, 'amersfoort')
+        registerMarker(52.2942, 4.8420, 'amstelveen')
+        registerMarker(52.3676, 4.9041, 'amsterdam-nl')
+        registerMarker(52.2112, 5.9699, 'apeldoorn')
+        registerMarker(51.9851, 5.8987, 'arnhem')
+        registerMarker(52.9927, 6.5642, 'assen')
+        registerMarker(51.5719, 4.7683, 'breda')
+        registerMarker(52.0116, 4.3571, 'delft')
+        registerMarker(51.6978, 5.3037, 's-hertogenbosch')
+        registerMarker(52.0705, 4.3007, 'the-hague-den-haag')
+        registerMarker(52.9563, 4.7608, 'den-helder')
+        
     </script>
 </body>
 </html>
