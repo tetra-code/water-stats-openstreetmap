@@ -51,10 +51,10 @@ const server = http.createServer(app);
 const wss = new ws.Server({ server });
 
 wss.on("connection", (con) => {
-
     con.on("message", async (request) => {
       const city = JSON.parse(request)
       con.send(JSON.stringify(waterData[city]));
+      console.log('sending mesage')
     });
   
     con.on("close", () => {

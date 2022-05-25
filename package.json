@@ -16,7 +16,6 @@
   "dependencies": {
     "ejs": "^3.0.2",
     "express": "^4.17.3",
-    "leaflet": "^1.8.0",
     "node": "^17.7.2",
     "puppeteer": "^13.5.2",
     "ws": "^8.5.0"
