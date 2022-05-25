@@ -43,11 +43,12 @@ svg {
   z-index: 2;
 }
 
+/* map */
 #map { 
   height: 700px; 
   width: 700px;
+  z-index: 1;
 }
-
 
 /* navigation */
 .navigation {
@@ -75,7 +76,7 @@ svg {
 }
 
 #mySidebar {
-  width: 220px;
+  width: 0;
   top: 270px;
   right: -50px;
 }
@@ -132,31 +133,22 @@ svg {
     --fs-title: 1.5rem;
     --fs-body: 0.8rem;
   }
-
-  .container {
-    width: 1200px;
-    margin-bottom: 170px;
-  }
 }
 
-/* consider smaller screen devices */
 @media (max-width: 500px) {
   :root {
     --fs-title: 1.3rem;
     --fs-body: 0.7rem;
   }
 
-  .container {
-    width: 900px;
-    margin-bottom: 170px;
-  }
   #myNav {
     height: 0;
     width: 300px;
   }
-}
 
-/* for windows media match in index.js */
-@media (min-width: 1001px) {
+  #map { 
+    height: 380px; 
+    width: 350px;
+  }
 }
 

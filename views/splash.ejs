@@ -87,6 +87,7 @@
             return ws.readyState === ws.OPEN 
         }
 
+        //open navigation bar depending on device size
         function openNav(city) {
             if (!isOpen(socket)) {
                 return;
@@ -137,8 +138,7 @@
  
         // OSM layer
         const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-        const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
-        { attribution });
+        const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution });
         map.addLayer(osm);
 
         // Icon for city indications
@@ -155,7 +155,38 @@
         registerMarker(51.6978, 5.3037, 's-hertogenbosch')
         registerMarker(52.0705, 4.3007, 'the-hague-den-haag')
         registerMarker(52.9563, 4.7608, 'den-helder')
-        
+        registerMarker(52.2661, 6.1552, 'deventer')
+        registerMarker(52.0347, 5.3457, 'doorn')
+        registerMarker(51.8132, 4.6900, 'dordrecht')
+        registerMarker(52.5126, 5.0492, 'edam')
+        registerMarker(52.0402, 5.6649, 'ede')
+        registerMarker(51.4416, 5.4697, 'eindhoven')
+        registerMarker(52.7076, 5.2741, 'enkhuizen')
+        registerMarker(52.2215, 6.8937, 'enschede')
+        registerMarker(52.4424, 6.0445, 'giethoorn')
+        registerMarker(52.0115, 4.7105, 'gouda')
+        registerMarker(52.3874, 4.6462, 'haarlem')
+        registerMarker(50.8882, 5.9795, 'heerlen')
+        registerMarker(52.2292, 5.1669, 'hilversum')
+        registerMarker(52.6424, 5.0602, 'hoorn')
+        registerMarker(52.5580, 5.9145, 'kampen')
+        registerMarker(51.8837, 4.6331, 'kinderdijk')
+        registerMarker(53.2012, 5.7999, 'leeuwarden')
+        registerMarker(52.1601, 4.4970, 'leiden')
+        registerMarker(52.5185, 5.4714, 'lelystad')
+        registerMarker(50.8514, 5.6910, 'maastricht')
+        registerMarker(52.7674, 5.1069, 'medemblik')
+        registerMarker(51.8125, 5.8372, 'nijmegen')
+        registerMarker(51.1913, 5.9878, 'roermond')
+        registerMarker(51.9244, 4.4777, 'rotterdam')
+        registerMarker(53.0337, 5.6556, 'sneek')
+        registerMarker(51.5606, 5.0919, 'tilburg')
+        registerMarker(52.0907, 5.1214, 'utrecht')
+        registerMarker(51.5483, 3.6660, 'veere')
+        registerMarker(51.3704, 6.1724, 'venlo')
+        registerMarker(51.9812, 5.6584, 'wageningen')
+        registerMarker(52.4729, 4.8219, 'zaanse-schans')
+        registerMarker(52.5168, 6.0830, 'zwolle')
     </script>
 </body>
 </html>
